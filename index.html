@@ -7,11 +7,10 @@
     <link rel="icon" type="image/svg+xml" href="BaronPit%20MC%20Guide/BaronPitIcon.png">
     <link rel="stylesheet" href="BaronPit%20MC%20Guide/normalize.min.css">
     <link rel="stylesheet" href="BaronPit%20MC%20Guide/style.css">
-        <!-- Discord stuff-->
+    <!-- Discord stuff-->
     <meta content="Baron Pit" property="og:title" />
-    <meta content="The official Baron Pit Minecraft server site!
-(Backup)" property="og:description" />
-    <meta content="http://baronpit-backup.ddns.net/" property="og:url" />
+    <meta content="The official Baron Pit Minecraft server site!" property="og:description" />
+    <meta content="http://baronpit.ddns.net/" property="og:url" />
     <meta content="https://raw.githubusercontent.com/SeaOfTorment/Public/main/BaronPit%20MC%20Guide/BaronPitIcon.png" property="og:image" />
     <meta content="#6a0dad" data-react-helmet="true" name="theme-color" />
 </head>
@@ -58,7 +57,7 @@
         </g>
       </svg>
   <!-- partial -->
-    <script src='BaronPit%20MC%20Guide/TweenLite.min.js'></script>
+    <script src='/BaronPit%20MC%20Guide/TweenLite.min.js'></script>
   <script src='BaronPit%20MC%20Guide/CSSPlugin.min.js'></script><script  src="BaronPit%20MC%20Guide/script.js"></script>
   <!-- END OF LINE -->
     <!-- FIRST -->
@@ -88,6 +87,60 @@
         <li>On the bottom left click "Add Server"</li>
         <li>Enter this address on the Server Address: <p id="ip">BaronPit.ddns.net</p></li>
     </ol>
+
+    <!-- THIRD -->
+    <h1>(Optiona) Skins</h1>
+    <video width=50% controls preload="metadata">
+
+        <source src="BaronPit%20MC%20Guide/InstallingShaders.webm#t=0.011">
+        <source src="BaronPit%20MC%20Guide/InstallingShaders.mp4#t=0.011">
+      It seems we're having issues playing the video, perhaps the encoders I used aren't supported by your browser. Contact me and I can help :3
+    </video>
+    <ol>
+        <li>Press <a id="ip">/</a></li>
+        <li>Type <a id="ip">skin set [Name]</a></li>
+    </ol>
+    <ul>
+        <li>Example: <p id="ip">/skin set notch</p></li>
+        <li>Want to add a custom skin? Contact me via Discord. <p id="ip">Sea#3582</p></li>
+    </ul>
+
+    <!-- FOURTH -->
+    <h1>(Optiona) Shaders</h1>
+    <video width=50% controls preload="metadata">
+
+        <source src="BaronPit%20MC%20Guide/InstallingShaders.webmm#t=0.011">
+        <source src="BaronPit%20MC%20Guide/InstallingShaders.mp4#t=0.011">
+      It seems we're having issues playing the video, perhaps the encoders I used aren't supported by your browser. Contact me and I can help :3
+    </video>
+    <ol>
+        <li>Download <a href="BaronPit%20MC%20Guide/BaronPitShader.zip">this shader.</a></li>
+        <li>Press ESC, options, video settings, shaders.</li>
+        <li>Click on shader folder, and move the BaronPitShader.zip file into that folder.</li>
+    </ol>
+    <ul>
+        <li>Note: Shaders will make you lag if your computer isn't strong enough.</li>
+    </ul>
+
+    <!-- FIFTH -->
+    <h1>(Optiona) Lag</h1>
+    <p id="paragraph">There are 2 types of lag, server lag and FPS lag. You can tell you have<br></p>
+    <p id="paragraph">server lag when a block lingers for a few momments after it's destroyed (if you<br></p>
+    <p id="paragraph">belive this is the case please contact me via Discord <p id="ip">Sea#3582</p>)<br></p>
+    <br>
+    <p id="paragraph">An example of FPS lag is when your game is stuttering or freezing.<br></p>
+    <p id="paragraph">If thats the case try some of these solutions:<br></p>
+    <ol>
+        <li>Lower the render distance (preferebly no lower then 8)</li>
+        <li>Lower the simulation distance</li>
+        <li>Turn max framerate to unlimited</li>
+        <li>Change the graphics to Fast</li>
+        <li>Change smooth lighting to off</li>
+        <li>Change smooth lighting level to off</li>
+    </ol>
+    <p id="paragraph">On the Minecraf launcher press the cog icon on the bottom right,<br></p>
+    <p id="paragraph">click settings and max out memory allocation.<br></p>
+    <!-- Baron Gif -->
     <img id="bar1" src="BaronPit%20MC%20Guide/Baron.gif">
     <img id="bar2" src="BaronPit%20MC%20Guide/Baron.gif">
 
@@ -102,6 +155,11 @@
         bottom: 0%;
         right: 0%;
         width: 30%;
+        -webkit-user-drag: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
         
     }
     #bar2 {
@@ -112,6 +170,11 @@
         bottom: 0%;
         left: 0%;
         width: 30%;
+        -webkit-user-drag: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
         
     }
     html {
@@ -130,6 +193,7 @@
         margin: auto;
     }
     h1 {
+        position: relative;
         display: block;
         margin: auto;
         text-align: center;
@@ -137,23 +201,46 @@
         font-size: 2.5vw;
     }
     p {
+        position: relative;
+        display: inline;
         display: block;
         margin: auto;
         text-align: center;
         color: white;
     }
+    #paragraph {
+        padding-left: 25%;
+        z-index:100;
+        position: relative;
+        color: rgb(255,220,115); 
+        font-size: 1.5vw;
+        display: inline
+    }
+    ul {
+        z-index:100;
+        position: relative;
+        padding-left: 26.5%;
+    }
     ol {
+        z-index:100;
+        position: relative;
         padding-left: 26.5%;
     }
     a {
+        z-index:100;
+        position: relative;
         font-size: 1.5vw;
         color:  rgb(194, 126, 36); 
     }
     li {
+        z-index:100;
+        position: relative;
         font-size: 1.5vw;
         color:  rgb(255,220,115); 
     }
     #ip{
+        z-index:100;
+        position: relative;
         display: inline;
         font-size: 1.5vw;
         color:  rgb(218, 71, 71);
