@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+
+  <meta name="twitter:card" content="player" />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/SeaOfTorment/Public/main/PosterAlt.png" />
+  <meta name="twitter:player" id="URL" content="https://raw.githubusercontent.com/SeaOfTorment/Public/main/Witch.webm" />
+  <meta name="twitter:player:width" content="420" />
+  <meta name="twitter:player:height" content="236" />
+  <meta name="twitter:player:stream:content_type" content="video/mp4" />
+
+  <title>Juno Video</title>
+</head>
+
+<body>
+  <video controls>
+    <source id="vidURL" preload type="video/mp4">
+  </video>
+</body>
+
+</html>
+
+<style>
+  html,
+  body,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  video { 
+    display: grid; 
+  }
+
+  body {
+    background-color: #000000;
+  }
+</style>
+
+<script>
+  document.getElementById("vidURL").src = document.getElementById("URL").getAttribute('content');
+</script>
